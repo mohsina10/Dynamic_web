@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 
-const dbURI="mongodb+srv://db:asn@7829@test.xtmowdy.mongodb.net/?retryWrites=true&w=majority";
+const dbURI="mongodb+srv://user2001:test123@cluster0.yrjxwok.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI,{ useNewUrlParser:true , useUnifiedTopology:true})
 try {

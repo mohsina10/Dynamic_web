@@ -7,18 +7,23 @@
     <title>Vacation Destinations WishList</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="images/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Our CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body> 
-    <header> 
+    <header class="jumb"> 
         <h1> Vacation Destinations WishList</h1> 
-        <p> Found exciting places to visit on your vacation ? use the form below to add them to your list </p>
+        <p> Enter the details for your WishList</p>
 
-    </header> 
-    <main> 
+    </header>  
+    <div class="container"> 
+         <div class="row row-body">
+        <div class="col-sm-6 col-12 col-body1"> 
+        <h2 id="title">Fill the Form</h2> 
         <form  action="/" method="POST" id="destion_details_form">
             <label for="name">Destination Name</label> 
             <input type="text" id="name" placeholder="destination name" name = "destname" required> 
@@ -33,24 +38,28 @@
             <textarea id="description" placeholder="Describe the destination "  name = "destdesc" ></textarea> 
             <button type="submit" href="/index.html"  >Add to List</button>
             
-        </form> 
+        </form>  
+        </div> 
+        <div class="col-sm-5 col-12 col-body2">
         <article> 
             <h2 id="title">Enter Destination Details</h2> 
             <div id="destination_container">
         <div class="card">
-            <img src ="http://localhost:3000/images/signpost.jpg">
+            <img src ="images/signpost.jpg">
             <div class="card-body">
                 <h3>Destination Name</h3> 
                 <h4>Destination Location</h4> 
                 <p class="card-text">Destination description</p> 
-                <button>Remove</button>
+                <button>Add</button>
             </div>
         </div>
                 
             </div>
-        </article>
-    </main>
-
+        </article> 
+        </div>
+         </div> 
+        
+</div>
     <!-- Our JavaScript -->
     <script src="script.js"></script>
 </body>

@@ -8,21 +8,69 @@ img{
 body{
     font-family: Arial; 
     color: #333;
-} 
+}  
+.row-header{
+    margin:0px auto;
+    padding:0px; 
+ }
 header{
-    padding: 50px; 
-    background-color: cornflowerblue;
+    
+    min-height: 75%;
+    background-color: rgb(207, 126, 73);
     color: white; 
     text-align: center; 
     margin-bottom: 20px;
+}  
+.jumb {
+    padding: 50px;
+    text-align: center;
+    margin:0px auto;  
+    min-height: 50vh; 
+    min-width: 100vh;
+    background-image:linear-gradient(rgba(65, 126, 191, 0.7),rgba(52, 141, 200, 0.7)) ,url("images/vac1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.jumbotron {
+    padding:100px 30px 100px 30px; 
+    text-align: center; 
+    margin:0px auto;  
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(65, 126, 191, 0.7),rgba(52, 141, 200, 0.7)) ,url("images/vac3.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    
 } 
+.row-body{
+    padding: 100px 30px 100px 30px; 
+    margin: auto; 
+    justify-content: space-between; 
+
+}
 main{
     max-width: 800px; 
-    padding: 20px;
+    padding: 100px;
     margin: auto; 
     display: flex; 
     justify-content: space-between;
 } 
+.btn-grp{
+    padding: 80px;
+}  
+.btn{
+    transition-duration: 0.4s; 
+    padding: 12px 28px; 
+    font-size: 16px; 
+    background-color: #f44336; 
+    border-radius: 12px; 
+    width: 250px;
+} 
+.btn:hover {
+    background-color:white; /* Green */
+    color: black;
+  }
 main form{
     width: 40%;
 } 
