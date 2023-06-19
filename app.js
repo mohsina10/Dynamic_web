@@ -1,3 +1,4 @@
+require('dotenv').config();
 const http = require('http');
 const express = require('express');
 const mongoose = require('mongoose');
@@ -20,13 +21,13 @@ app.use(express.urlencoded({extended:true}));
 
 
 
-const dbURI="mongodb+srv://user2001:test123@cluster0.yrjxwok.mongodb.net/?retryWrites=true&w=majority";
+//const dbURI="mongodb+srv://user2001:test123@cluster0.yrjxwok.mongodb.net/?retryWrites=true&w=majority";
 
-mongoose.connect(dbURI,{ useNewUrlParser:true , useUnifiedTopology:true})
+mongoose.connect( process.env.MONGODB_URL,{ useNewUrlParser:true , useUnifiedTopology:true})
 try {
     // Connect to the MongoDB cluster
      mongoose.connect(
-      dbURI,
+      process.env.MONGODB_URL,
       { useNewUrlParser: true, useUnifiedTopology: true },
       () => console.log(" Mongoose is connected")
     );
